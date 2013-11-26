@@ -1,13 +1,16 @@
 # Matcher for matching json responses
 
-In a lot rspec controller tests I need to verify json response. Most of the time people use:
+## Installation
 
-```ruby
-expect(response.body.to_json).to eq {attribute1: 'value1', attribute2: 'value2'}.to_json
-```
+* copy to ```spec/support/controllers/render_json_matcher```
+* Rspec will load it from there
 
-Which is long, and most importantly if attribute positions are changed the test will fail. This fixed by ```render_json``` matcher:
+## Usage
 
 ```ruby
 expect(controller).to render_json attribute1: 'value1', attribute2: 'value2'
 ```
+
+## Notice
+
+```render_json``` doesn't care about the order of the json elements. Internally it decodes the json hash and then makes the comparison.
