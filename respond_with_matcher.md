@@ -16,7 +16,7 @@ describe ProductsController do
   describe "GET show" do
     product = double
     allow(Product).to receive(:find).with('1') { product }
-    get :id => 1
+    get :show, id: 1
     expect(controller).to respond_with product
   end
 end
