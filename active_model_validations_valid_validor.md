@@ -11,7 +11,6 @@ Example can be a ```Registration``` object, which create user and account. For c
 ## Usage
 
 ```ruby
-
 # app/models/registration
 class Registration
   include ActiveModel::Model
@@ -26,7 +25,9 @@ class Registration
 
   # attribute handlers and model settings methods
 end
+```
 
+```ruby
 # app/controllers/registration_controller.rb
 class RegistrationController < ApplicationController
 
