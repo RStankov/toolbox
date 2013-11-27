@@ -6,7 +6,7 @@ Example can be a ```Registration``` object, which create user and account. For c
 
 ## Installation
 
-* copy to ```lib/active_model/validations/valid_validator.rb```
+* copy ```active_model_validations_valid_validor.rb``` to ```lib/active_model/validations/valid_validator.rb```
 
 ## Usage
 
