@@ -2,7 +2,7 @@
 
 ## Installation
 
-* copy to ```spec/support/controllers/render_json_matcher```
+* copy ```render_json_matcher.rb``` to ```spec/support/controllers/render_json_matcher```
 * Rspec will load it from there
 
 ## Usage
