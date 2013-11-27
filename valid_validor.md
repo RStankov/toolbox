@@ -20,16 +20,14 @@ class Registration
 
   def register
     if valid?
-      # Everything is fine
+      # everything is fine
     end
   end
 
   # attribute handlers and model settings methods
-
 end
 
 # app/controllers/registration_controller.rb
-
 class RegistrationController < ApplicationController
 
   def create
@@ -40,7 +38,10 @@ class RegistrationController < ApplicationController
   end
 
   # other stuff
-
 end
 
 ```
+
+## Notice
+
+All errors are delgated to the parent object (_Registration_ in the example). So attribute readers are required for them.
