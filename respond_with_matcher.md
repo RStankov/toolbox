@@ -2,7 +2,7 @@
 
 ## Installation
 
-* copy ```respond_with_matcher.rb``` to ```spec/support/controllers/respond_with```
+* copy ```respond_with_matcher.rb``` to ```spec/support/controllers/respond_with.rb```
 * include spec_helper as ```config.include SpecSupport::Controllers::RespondWith, type: :controller```
 
 
