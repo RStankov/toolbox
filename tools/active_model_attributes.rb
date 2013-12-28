@@ -7,6 +7,10 @@ module ActiveModel
     end
 
     def initialize(attributes = {})
+      self.attributes = attributes
+    end
+
+    def attributes=(attributes)
       attributes.slice(*self.class.attribute_names).each do |name, value|
         public_send "#{name}=", value
       end
