@@ -17,7 +17,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   def default_url
-    "/fallbacks/#{model.class.to_s.underscore}/#{mounted_as}/#{version_name || 'default'}.png"
+    ActionController::Base.helpers.asset_path "fallbacks/#{model.class.to_s.underscore}/#{mounted_as}/#{version_name || 'default'}.png"
   end
 
   def filename
