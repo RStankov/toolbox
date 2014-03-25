@@ -19,12 +19,12 @@ end
 ```
 
 ```Ruby
-product = Product.new :name => 'iPhone', :price => '$699', :category_name => 'gadgets'
+product = Product.new name: 'iPhone', price: '$699', category_name: 'gadgets'
 product.name          # => 'iPhone'
 product.price         # => '$699'
 product.category_name # => 'gadgets'
 
 # attribute access
 product.attributes    # => {'name' => 'iPhone', 'price' => '$699', 'category_name' => 'gadgets'}
-product.attributes = {name => 'iPhone 5S'}
+product.attributes = {name: 'iPhone 5S'}
 ```
