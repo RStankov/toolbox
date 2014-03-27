@@ -5,8 +5,8 @@ Simple markdown renderer
 ## Installation
 
 * install 'Redcarpet' gem
-* copy ```render_markdown.rb``` to ```lib/render_markdown.rb```
-* copy ```render_markdown_spec.rb``` to ```spec/lib/render_markdown_spec```
+* copy `render_markdown.rb` to `lib/render_markdown.rb`
+* copy `render_markdown_spec.rb` to `spec/lib/render_markdown_spec`
 
 
 ## Usage

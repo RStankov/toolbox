@@ -2,7 +2,7 @@
 
 ## Installation
 
-* copy ```image_uploader.rb``` to ```app/models/uploaders/image_uploader.rb```
+* copy `image_uploader.rb` to `app/models/uploaders/image_uploader.rb`
 
 ## Usage
 
@@ -19,5 +19,5 @@ end
 
 ## Notice
 
-```Feature.s3_uploads``` indicates if what store use are using. In general this class just easy to get start with and should be adjusts to application specific needs
+`Feature.s3_uploads` indicates if what store use are using. In general this class just easy to get start with and should be adjusts to application specific needs
 

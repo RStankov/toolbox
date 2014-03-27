@@ -2,11 +2,11 @@
 
 In a lot of cases the validation of model depend on the validation rules in sub models.
 
-Example can be a ```Registration``` object, which create user and account. For creating them both models should be valid. If there is an error the registration should have errors for to to show them to the user
+Example can be a `Registration` object, which create user and account. For creating them both models should be valid. If there is an error the registration should have errors for to to show them to the user
 
 ## Installation
 
-* copy ```active_model_validations_valid_validor.rb``` to ```lib/active_model/validations/valid_validator.rb```
+* copy `active_model_validations_valid_validor.rb` to `lib/active_model/validations/valid_validator.rb`
 
 ## Usage
 

@@ -11,7 +11,7 @@ if (top.location != self.location) {
 
 ## Installation
 
-* copy ```ensure_not_in_iframe.js``` to ```app/assets/javascript/.../ensure_not_in_iframe.js```
+* copy `ensure_not_in_iframe.js` to `app/assets/javascript/.../ensure_not_in_iframe.js`
 
 ## Usage
 

@@ -4,7 +4,7 @@ Integrates the CSRF Token with Angular.
 
 ## Installation
 
-* copy ```angular_csrf_protection.rb``` to ```app/controllers/concerns/angular_csrf_protection.rb```
+* copy `angular_csrf_protection.rb` to `app/controllers/concerns/angular_csrf_protection.rb`
 
 ## Usage
 

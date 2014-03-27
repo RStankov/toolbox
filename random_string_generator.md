@@ -2,8 +2,8 @@
 
 ## Installation
 
-* copy ```random_string_generator.rb``` to ```lib/random_string_generator.rb```
-* copy ```random_string_generator_spec.rb``` to ```spec/lib/random_string_generator_spec.rb```
+* copy `random_string_generator.rb` to `lib/random_string_generator.rb`
+* copy `random_string_generator_spec.rb` to `spec/lib/random_string_generator_spec.rb`
 
 
 ## Usage

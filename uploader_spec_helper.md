@@ -4,8 +4,8 @@ A minor helper for testing CarrierWave uploaders
 
 ## Installation
 
-* copy ```uploader_spec_helper.rb``` to ```spec/support/uploader_helper.rb```
-* add ```config.include  SpecSupport::UploaderHelper, type: :uploader``` to your ```spec_helper.rb```
+* copy `uploader_spec_helper.rb` to `spec/support/uploader_helper.rb`
+* add `config.include  SpecSupport::UploaderHelper, type: :uploader` to your `spec_helper.rb`
 
 
 ## Usage
