@@ -29,6 +29,10 @@ describe RandomStringGenerator do
     it "has limit on number of value tries" do
       expect { RandomStringGenerator.call(16, 2) { false } }.to raise_error RandomStringGenerator::LimitReachedError
     end
+
+    it "returns random data" do
+      expect(RandomStringGenerator.call).not_to eq RandomStringGenerator.call
+    end
   end
 end
 
