@@ -8,7 +8,7 @@ RSpec::Matchers.define :render_json do |expected|
     actual.diff(match) == {}
   end
 
-  failure_message_for_should do |response|
+  failure_message do |response|
     "Expected to render JSON: #{expected}\n" +
     "      actually rendered: #{response.body}"
   end
