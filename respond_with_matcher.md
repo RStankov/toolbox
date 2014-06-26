@@ -13,11 +13,30 @@
 require 'spec_helper'
 
 describe ProductsController do
-  describe "GET show" do
-    product = double
-    allow(Product).to receive(:find).with('1') { product }
-    get :show, id: 1
-    expect(controller).to respond_with product
+  let(:product) { double }
+
+  describe "GET 'update'" do
+    it "responds with a product" do
+      allow(Product).to receive(:find).with('1') { product }
+      get :show, id: 1
+      expect(controller).to respond_with product
+    end
+  end
+
+  describe "PUT 'update'" do
+    before do
+      allow(Product).to receive(:update) { product }
+    end
+
+    it "updates a product" do
+      put :update, id: 1, product: {name: 'Test'}
+      expect(Product).to have_received(:update).with('1', 'name' => 'Test')
+    end
+
+    it "responds with a product" do
+      put :update, id: 1, product: {}
+      expect(controller).to respond_with product
+    end
   end
 end
 
