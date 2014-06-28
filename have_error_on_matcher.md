@@ -2,7 +2,7 @@
 
 ## Installation
 
-* copy `have_error_on_matcher.rb` to `spec/support/models/have_error_on_matcher.rb`
+* copy `have_error_on_matcher.rb` to `spec/support/matchers/have_error_on_matcher.rb`
 
 
 ## Usage
