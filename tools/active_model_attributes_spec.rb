@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module ActiveModel
   describe Attributes do
-    describe ".attributes_names" do
+    describe '.attributes_names' do
       it "returns attribute names" do
         klass = Class.new do
           include Attributes
@@ -13,7 +13,7 @@ module ActiveModel
       end
     end
 
-    describe "#initialize" do
+    describe '#initialize' do
       it "can be called with no arguments" do
         klass = Class.new do
           include Attributes
@@ -22,7 +22,7 @@ module ActiveModel
         expect { klass.new }.not_to raise_error
       end
 
-      it "assign the passed attributes" do
+      it 'assign the passed attributes' do
         klass = Class.new do
           include Attributes
           attributes :price
@@ -41,7 +41,7 @@ module ActiveModel
         expect { klass.new invalid: 'attribute' }.not_to raise_error
       end
 
-      it "handles HashWithIndifferentAccess hashes" do
+      it 'handles HashWithIndifferentAccess hashes' do
         klass = Class.new do
           include Attributes
           attributes :price
@@ -54,8 +54,8 @@ module ActiveModel
       end
     end
 
-    describe "#attributes" do
-      it "returns attributes" do
+    describe '#attributes' do
+      it 'returns attributes' do
         klass = Class.new do
           include Attributes
           attributes :name
