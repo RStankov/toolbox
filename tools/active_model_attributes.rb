@@ -21,9 +21,16 @@ module ActiveModel
     end
 
     module ClassMethods
-      def attributes(*attributes)
+      def attributes(*attributes, delegate: nil, prefix: nil, allow_nil: nil)
         @attribute_names.push *attributes
-        attr_accessor *attributes
+
+
+        if delegate.nil?
+          attr_accessor *attributes
+        else
+          self.delegate *attributes, to: delegate, prefix: prefix, allow_nil: allow_nil
+          self.delegate *attributes.map { |attr| "#{attr}=" }, to: delegate, prefix: prefix, allow_nil: allow_nil
+        end
       end
 
       def attribute_names
@@ -32,4 +39,3 @@ module ActiveModel
     end
   end
 end
-
