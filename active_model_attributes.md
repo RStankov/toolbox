@@ -28,3 +28,20 @@ product.category_name # => 'gadgets'
 product.attributes    # => {'name' => 'iPhone', 'price' => '$699', 'category_name' => 'gadgets'}
 product.attributes = {name: 'iPhone 5S'}
 ```
+
+## Tips
+
+```ruby
+class SignUp
+  include ActiveModel::Attributes
+
+  attr_reader :user
+
+  # supports delegation of attributes
+  attributes :first_name, :last_name, :email, delegate: :user
+
+  def initialize(user)
+    @user = user
+  end
+end
+```
